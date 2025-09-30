@@ -1,19 +1,3 @@
-#!/usr/bin/env python3
-"""
-scheduler-gpt.py
-
-Team: (list team members here)
-Implements: FIFO (FCFS), Preemptive SJF, Round Robin schedulers.
-
-Usage:
-    python scheduler-gpt.py inputFile.in
-
-Output:
-    Writes to inputFile.out
-
-Specified error messages and output formatting follow the assignment instructions.
-"""
-
 import sys
 import os
 from collections import deque
