@@ -77,8 +77,10 @@ def parse_input(filename):
     }
     with open(filename, 'r') as f:
         for raw in f:
-            line = raw.strip()
-            if not line or line.startswith('#'):
+            # remove inline comments that start with '#', then strip whitespace
+            # e.g. "process ... # comment" -> "process ..."
+            line = raw.split('#', 1)[0].strip()
+            if not line:
                 continue
             parts = line.split()
             if parts[0].lower() == "processcount":
