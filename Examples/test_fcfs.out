@@ -1,0 +1,17 @@
+2 processes
+Using First In First Out
+
+Time   0 : P1 arrived
+Time   0 : P1 selected (burst   3)
+Time   2 : P2 arrived
+Time   3 : P1 finished
+Time   3 : P2 selected (burst   4)
+Time   7 : P2 finished
+Time   7 : Idle
+Time   8 : Idle
+Time   9 : Idle
+
+Finished at time 10
+
+P1 wait 0 turnaround 3 response 0
+P2 wait 1 turnaround 5 response 1
